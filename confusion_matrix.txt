@@ -1,0 +1,189 @@
+[1] "--------------------------------------- Random Forest ----------------------------------------------"
+Confusion Matrix and Statistics
+
+                     Reference
+Prediction            red soil cotton crop grey soil damp grey soil vegetation stubble very damp grey soil
+  red soil                 299           1         3              1                  8                   0
+  cotton crop                0         125         0              0                  7                   1
+  grey soil                  7           0       236             17                  1                  10
+  damp grey soil             0           1        20             67                  0                  27
+  vegetation stubble         0          11         1              0                111                   6
+  very damp grey soil        0           2        11             40                 14                 257
+
+Overall Statistics
+                                          
+               Accuracy : 0.8528          
+                 95% CI : (0.8322, 0.8717)
+    No Information Rate : 0.2383          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.8177          
+                                          
+ Mcnemar's Test P-Value : NA              
+
+Statistics by Class:
+
+                     Class: red soil Class: cotton crop Class: grey soil Class: damp grey soil Class: vegetation stubble
+Sensitivity                   0.9771            0.89286           0.8708               0.53600                   0.78723
+Specificity                   0.9867            0.99301           0.9654               0.95858                   0.98425
+Pos Pred Value                0.9583            0.93985           0.8708               0.58261                   0.86047
+Neg Pred Value                0.9928            0.98697           0.9654               0.95038                   0.97403
+Prevalence                    0.2383            0.10903           0.2111               0.09735                   0.10981
+Detection Rate                0.2329            0.09735           0.1838               0.05218                   0.08645
+Detection Prevalence          0.2430            0.10358           0.2111               0.08956                   0.10047
+Balanced Accuracy             0.9819            0.94293           0.9181               0.74729                   0.88574
+                     Class: very damp grey soil
+Sensitivity                              0.8538
+Specificity                              0.9318
+Pos Pred Value                           0.7932
+Neg Pred Value                           0.9542
+Prevalence                               0.2344
+Detection Rate                           0.2002
+Detection Prevalence                     0.2523
+Balanced Accuracy                        0.8928
+[1] ""
+[1] ""
+[1] ""
+[1] ""
+[1] "-------------------------------------- Support Vector Machine ---------------------------------------"
+Confusion Matrix and Statistics
+
+                     Reference
+Prediction            red soil cotton crop grey soil damp grey soil vegetation stubble very damp grey soil
+  red soil                 302           2         1              1                  6                   0
+  cotton crop                0         121         0              0                  2                   0
+  grey soil                  4           0       257             25                  1                  12
+  damp grey soil             0           0        12             61                  1                  28
+  vegetation stubble         0          14         0              0                115                   4
+  very damp grey soil        0           3         1             38                 16                 257
+
+Overall Statistics
+                                         
+               Accuracy : 0.8668         
+                 95% CI : (0.847, 0.8849)
+    No Information Rate : 0.2383         
+    P-Value [Acc > NIR] : < 2.2e-16      
+                                         
+                  Kappa : 0.8347         
+                                         
+ Mcnemar's Test P-Value : NA             
+
+Statistics by Class:
+
+                     Class: red soil Class: cotton crop Class: grey soil Class: damp grey soil Class: vegetation stubble
+Sensitivity                   0.9869            0.86429           0.9483               0.48800                   0.81560
+Specificity                   0.9898            0.99825           0.9585               0.96462                   0.98425
+Pos Pred Value                0.9679            0.98374           0.8595               0.59804                   0.86466
+Neg Pred Value                0.9959            0.98363           0.9858               0.94585                   0.97741
+Prevalence                    0.2383            0.10903           0.2111               0.09735                   0.10981
+Detection Rate                0.2352            0.09424           0.2002               0.04751                   0.08956
+Detection Prevalence          0.2430            0.09579           0.2329               0.07944                   0.10358
+Balanced Accuracy             0.9884            0.93127           0.9534               0.72631                   0.89993
+                     Class: very damp grey soil
+Sensitivity                              0.8538
+Specificity                              0.9410
+Pos Pred Value                           0.8159
+Neg Pred Value                           0.9546
+Prevalence                               0.2344
+Detection Rate                           0.2002
+Detection Prevalence                     0.2453
+Balanced Accuracy                        0.8974
+[1] ""
+[1] ""
+[1] ""
+[1] ""
+[1] "-------------------------------------- RNA ---------------------------------------"
+Confusion Matrix and Statistics
+
+                     Reference
+Prediction            red soil cotton crop grey soil damp grey soil vegetation stubble very damp grey soil
+  red soil                 298           3         0              0                 12                   0
+  cotton crop                0         126         0              0                 25                   0
+  grey soil                  6           0       264             40                  0                  16
+  damp grey soil             0           0         0              0                  0                   0
+  vegetation stubble         1           3         0              0                 77                   2
+  very damp grey soil        1           8         7             85                 27                 283
+
+Overall Statistics
+                                         
+               Accuracy : 0.8162         
+                 95% CI : (0.7939, 0.837)
+    No Information Rate : 0.2383         
+    P-Value [Acc > NIR] : < 2.2e-16      
+                                         
+                  Kappa : 0.7683         
+                                         
+ Mcnemar's Test P-Value : NA             
+
+Statistics by Class:
+
+                     Class: red soil Class: cotton crop Class: grey soil Class: damp grey soil Class: vegetation stubble
+Sensitivity                   0.9739            0.90000           0.9742               0.00000                   0.54610
+Specificity                   0.9847            0.97815           0.9388               1.00000                   0.99475
+Pos Pred Value                0.9521            0.83444           0.8098                   NaN                   0.92771
+Neg Pred Value                0.9918            0.98764           0.9927               0.90265                   0.94671
+Prevalence                    0.2383            0.10903           0.2111               0.09735                   0.10981
+Detection Rate                0.2321            0.09813           0.2056               0.00000                   0.05997
+Detection Prevalence          0.2438            0.11760           0.2539               0.00000                   0.06464
+Balanced Accuracy             0.9793            0.93907           0.9565               0.50000                   0.77042
+                     Class: very damp grey soil
+Sensitivity                              0.9402
+Specificity                              0.8698
+Pos Pred Value                           0.6886
+Neg Pred Value                           0.9794
+Prevalence                               0.2344
+Detection Rate                           0.2204
+Detection Prevalence                     0.3201
+Balanced Accuracy                        0.9050
+
+_________________________________________________________________________________________________________________________________
+
+Comparando as matrizes de confusão e utilizando o valor da acurácia como critério de seleção, temos que o modelo que melhor consegue se ajustar aos dados fornecidos é o Support Vector Machine. 
+
+Treinando um novo SNM com todo o conjunto de dados, obtemos o modelo sob o nome de svm_final com a seguinte matriz de confusão:
+
+Confusion Matrix and Statistics
+
+                     Reference
+Prediction            red soil cotton crop grey soil damp grey soil vegetation stubble very damp grey soil
+  red soil                1499           2        10              5                 48                   0
+  cotton crop                2         636         0              1                  9                   2
+  grey soil                 19           0      1303            160                  3                  48
+  damp grey soil             0           6        40            310                  4                 167
+  vegetation stubble        12          49         0              4                571                  29
+  very damp grey soil        1          10         5            146                 72                1262
+
+Overall Statistics
+                                          
+               Accuracy : 0.8673          
+                 95% CI : (0.8588, 0.8755)
+    No Information Rate : 0.2382          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.8355          
+                                          
+ Mcnemar's Test P-Value : NA              
+
+Statistics by Class:
+
+                     Class: red soil Class: cotton crop Class: grey soil Class: damp grey soil Class: vegetation stubble
+Sensitivity                   0.9778            0.90469           0.9595               0.49521                   0.80764
+Specificity                   0.9867            0.99756           0.9547               0.96264                   0.98359
+Pos Pred Value                0.9584            0.97846           0.8500               0.58824                   0.85865
+Neg Pred Value                0.9930            0.98842           0.9888               0.94651                   0.97643
+Prevalence                    0.2382            0.10925           0.2110               0.09728                   0.10987
+Detection Rate                0.2329            0.09883           0.2025               0.04817                   0.08873
+Detection Prevalence          0.2430            0.10101           0.2382               0.08190                   0.10334
+Balanced Accuracy             0.9823            0.95113           0.9571               0.72893                   0.89561
+                     Class: very damp grey soil
+Sensitivity                              0.8369
+Specificity                              0.9525
+Pos Pred Value                           0.8436
+Neg Pred Value                           0.9502
+Prevalence                               0.2343
+Detection Rate                           0.1961
+Detection Prevalence                     0.2325
+Balanced Accuracy                        0.8947
+_______________________________________________________________________________________________________________________________________
+Por aumentar o número de amostras e utlilizar o próprio dataset de treino como validador tivemos o aumento na acurácia, de 0,8668 para 
+0,8673 , contudo isso demonstra que apesar do uso total dos dados não parece ter ocorrido o processo de overfitting e que o modelo escolhido apesar de ser o melhor entre os demonstrados, ainda não é capaz de expressar todos os dados de maneira fiel. 

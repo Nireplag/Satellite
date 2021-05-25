@@ -18,9 +18,48 @@ df_test <- df[-index,]
 
 # train and predict for random forest
 
-rf <- train(classes~., data = df_train, method = "rf")
-save(rf, file = "rf.RData")
+rf <- train(classes~., data = df_train, method = "rf") # train model
+# save(rf, file = "rf.RData") # save trained model
 predictions_rf <- predict(rf, df_test)
 confusionMatrix(predictions_rf, df_test$classes)
 
+# train and predict for SVM
+
+svm <- train(classes~., data = df_train, method = "svmRadial")
+save(svm, file = "svm.RData") #save trained model
+predictions_svm <-predict(svm, df_test)
+confusionMatrix(predictions_svm, df_test$classes)
+
+# train and predict for RNA(nnet)
+
+rna <- train(classes~., data = df_train, method = "nnet")
+save(rna, file = "rna.RData") #save trained model
+predictions_rna <- predict(rna, df_test)
+confusionMatrix(predictions_rna, df_test$classes)
+
+
+# create output file with all the confusion matrix information and analysis of the values
+sink("confusion_matrix.txt")
+print("--------------------------------------- Random Forest ----------------------------------------------")
+print(confusionMatrix(predictions_rf, df_test$classes))
+print("")
+print("")
+print("")
+print("")
+print("-------------------------------------- Support Vector Machine ---------------------------------------")
+confusionMatrix(predictions_svm, df_test$classes)
+print("")
+print("")
+print("")
+print("")
+print("-------------------------------------- RNA ---------------------------------------")
+confusionMatrix(predictions_rna, df_test$classes)
+sink()
+
+#Training all a new svm with all data and checking confusion matrix
+
+svm_final <- train(classes~., data - df, method = "svm")
+save(svm_final, file = "svm_final.RData") 
+predictions_svm_final <- predict(svm_final, df)
+confusionMatrix(predictions_svm_final, df$classes)
 
