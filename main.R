@@ -19,21 +19,21 @@ df_test <- df[-index,]
 # train and predict for random forest
 
 rf <- train(classes~., data = df_train, method = "rf") # train model
-# save(rf, file = "rf.RData") # save trained model
+saveRDS(rf, file = "rf.rds") # save trained model
 predictions_rf <- predict(rf, df_test)
 confusionMatrix(predictions_rf, df_test$classes)
 
 # train and predict for SVM
 
 svm <- train(classes~., data = df_train, method = "svmRadial")
-save(svm, file = "svm.RData") #save trained model
+save(svm, file = "svm.rds") #save trained model
 predictions_svm <-predict(svm, df_test)
 confusionMatrix(predictions_svm, df_test$classes)
 
 # train and predict for RNA(nnet)
 
 rna <- train(classes~., data = df_train, method = "nnet")
-save(rna, file = "rna.RData") #save trained model
+saveRDS(rna, file = "rna.rds") #save trained model
 predictions_rna <- predict(rna, df_test)
 confusionMatrix(predictions_rna, df_test$classes)
 
@@ -59,7 +59,7 @@ sink()
 #Training all a new svm with all data and checking confusion matrix
 
 svm_final <- train(classes~., data = df, method = "svmRadial")
-save(svm_final, file = "svm_final.RData") 
+saveRDS(svm_final, file = "svm_final.rds") 
 predictions_svm_final <- predict(svm_final, df)
 confusionMatrix(predictions_svm_final, df$classes)
 
