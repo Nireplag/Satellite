@@ -140,7 +140,7 @@ ________________________________________________________________________________
 
 Comparando as matrizes de confusão e utilizando o valor da acurácia como critério de seleção, temos que o modelo que melhor consegue se ajustar aos dados fornecidos é o Support Vector Machine. 
 
-Treinando um novo SNM com todo o conjunto de dados, obtemos o modelo sob o nome de svm_final com a seguinte matriz de confusão:
+Treinando um novo SVM com todo o conjunto de dados, obtemos o modelo sob o nome de svm_final com a seguinte matriz de confusão:
 
 Confusion Matrix and Statistics
 

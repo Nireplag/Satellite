@@ -26,7 +26,7 @@ confusionMatrix(predictions_rf, df_test$classes)
 # train and predict for SVM
 
 svm <- train(classes~., data = df_train, method = "svmRadial")
-save(svm, "svm.rds") #save trained model
+saveRDS(svm, "svm.rds") #save trained model
 predictions_svm <-predict(svm, df_test)
 confusionMatrix(predictions_svm, df_test$classes)
 
