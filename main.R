@@ -58,7 +58,7 @@ sink()
 
 #Training all a new svm with all data and checking confusion matrix
 
-svm_final <- train(classes~., data - df, method = "svm")
+svm_final <- train(classes~., data = df, method = "svmRadial")
 save(svm_final, file = "svm_final.RData") 
 predictions_svm_final <- predict(svm_final, df)
 confusionMatrix(predictions_svm_final, df$classes)
